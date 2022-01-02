@@ -3,9 +3,21 @@ A simple but effective contract language
 
 ## The Types
 
-### Quantity
 
-### Price
+### Booleans
+There are two Boolean values, and a literal for each one.
+```
+true  // Not false.
+false // Not *not* false.
+```
+
+### Numbers
+
+#### Integers
+
+#### Decimal
+
+#### Rational
 
 ### Date & Time
 
