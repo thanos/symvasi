@@ -14,10 +14,35 @@ false // Not *not* false.
 ### Numbers
 
 #### Integers
+In `SymVasi`, `integers` are zero, positive or negative whole numbers without a fractional part and having ranging precision upto 128bits, e.g. 0, 100, -10. Integers can be expressed as binary, octal, and hexadecimal values.
+```
+isv>  0b11011000 # binary
+216
+isv> 0o12 # octal
+10
+isv> 0x12 # hexadecimal
+
+```
+
 
 #### Decimal
+To avoid precision ambiguity `SymVasi` doesn not offer float but instead `Decimal` which offers fast fast correctly-rounded decimal fixed point arithmetic. Some values cannot be exactly represented in a float data type. For instance, storing the 0.1 value in "classic" float (which is a binary floating point value) variable we get only an approximation of the value. We want to avoid such problems as we see in rust and other languages, such as when `0.1 + 0.2` is not equal to `0.3`. Similarly, the 1/3 value cannot be represented exactly in decimal floating point type. To mitigate these problems all decimal operations are carried out under the constraints and strategies set by the contracts decimal context. 
+
+
 
 #### Rational
 
+#### Complex
+
 ### Date & Time
+#### DateTime
+#### Timezone
+
+### Address
+
+### Contract
+
+### Transaction
+
+
 
