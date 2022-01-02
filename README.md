@@ -9,6 +9,7 @@ All types in the `SymVasi` langaued are influced by the the various contexts tha
 contract {
 
   preamble {
+    
   
   }
   
@@ -16,7 +17,7 @@ contract {
 
 }
 
-
+```
 
 
 ### Booleans
